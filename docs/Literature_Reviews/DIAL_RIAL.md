@@ -16,6 +16,8 @@ discretise/regularise unit (DRU(m_t^a))
 combination of centralised learning and Q-networks makes it possible, not only to share parameters but to push gradients from one agent to another through the communication channel. Thus, while RIAL is end-to-end trainable within each agent, DIAL is end-to-end trainable across agents. Letting gradients flow from one agent to another gives them richer feedback, reducing the required amount of learning by trial and error, and easing the discovery of effective protocols.
 Both Qu and Qm are trained using DQN with the following two modifications, which were found to be essential for performance. First, we disable experience replay to account for the non-stationarity that occurs when multiple agents learn concurrently, as it can render experience obsolete and misleading. Second, to account for partial observability, we feed in the actions u and m taken by each agent as inputs on the next time-step. Figure 1(a) shows how information flows between agents and the environment, and how Q-values are processed by the action selector in order to produce the action, uta, and message mta. Since this approach treats agents as independent networks, the learning phase is not centralised, even though our problem setting allows it to be. Consequently, the agents are treated exactly the same way during decentralised execution as during learning. -->
 
+![RIAL and DIAL architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/9bac5ef021cf74179da8ee82674ef46a5eb3918c/assets/images/DIAL%20and%20RIAL.drawio.svg)
+
 The paper "Learning to Communicate with Deep Multi-Agent Reinforcement Learning" by Foerster et al. introduced two approaches for inter-agent communication in multi-agent reinforcement learning: Reinforced Inter-Agent Learning (RIAL) and Differentiable Inter-Agent Learning (DIAL).
 
 RIAL uses deep Q-learning with a recurrent network to address partial observability. The agents can backpropagate error derivatives through noisy communication channels, enabling them to learn to communicate effectively. RIAL uses centralised learning but decentralised execution.
@@ -27,9 +29,6 @@ Both RIAL and DIAL disable experience replay to account for the non-stationarity
 In DIAL, the gradient term for the message is the backpropagated error from the recipient of the message to the sender, providing a richer training signal than the DQN loss for Qm in RIAL. The use of discretise/regularise units (DRUs) is also introduced to improve the stability of training.
 
 Foerster et al. demonstrated the effectiveness of these approaches in several challenging environments, such as the cooperative navigation task and the predator-prey pursuit game.
-
-
-![RIAL and DIAL architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/9bac5ef021cf74179da8ee82674ef46a5eb3918c/assets/images/DIAL%20and%20RIAL.drawio.svg)
 
 
 
