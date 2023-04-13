@@ -28,9 +28,6 @@ In DIAL, the gradient term for the message is the backpropagated error from the 
 
 Foerster et al. demonstrated the effectiveness of these approaches in several challenging environments, such as the cooperative navigation task and the predator-prey pursuit game.
 
-(Work taken from the paper "Learning to Communicate with Deep Multi-Agent Reinforcement Learning" by J. N. Foerster, Y. M. Assael, N. de Freitas, and S. Whiteson, accessed on Apr. 12, 2023, and available online at http://arxiv.org/abs/1605.06676.)
-
-
 
 ![RIAL and DIAL architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/9bac5ef021cf74179da8ee82674ef46a5eb3918c/assets/images/DIAL%20and%20RIAL.drawio.svg)
 
