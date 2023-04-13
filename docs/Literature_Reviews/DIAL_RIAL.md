@@ -40,3 +40,8 @@ Foerster et al. demonstrated the effectiveness of these approaches in several ch
 | Output | Q-value (expected cumulative reward for action)     | V-value (expected cumulative reward for state)   |
 | Used in | Q-learning, SARSA, model-free RL algorithms         | Actor-critic algorithms                          |
 | Purpose | Used to learn the values of actions in different states | Used to estimate the value of a state itself  |
+
+
+!!! Note
+    
+    - DIAL is the first to propose learnable communication via backpropagation with deep Q-networks.
