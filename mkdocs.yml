@@ -20,6 +20,8 @@ nav:
   - 'Lit Review':
       - 'Literature_Reviews/CommNet.md'
       - 'Literature_Reviews/DIAL_RIAL.md'
+  - 'Task Carried Out':
+      - 'tasks/tasks_carried.md'
   - 'Findings':
       - 'Findings/KL_divergence.md'
       
