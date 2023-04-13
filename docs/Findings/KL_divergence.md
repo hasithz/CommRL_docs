@@ -6,7 +6,7 @@ KL divergence measures the amount of information lost when approximating one pro
 
 The formula for KL divergence between two probability distributions `P` and `Q` is:
 
-KL(P || Q) = Σ P(x) log(P(x) / Q(x))
+$$ KL(P || Q) = Σ P(x) log(P(x) / Q(x)) $$
 
 where `x` represents the possible outcomes of a random variable. `P(x)` is the probability of `x` according to distribution `P`, and `Q(x)` is the probability of `x` according to distribution `Q`. The sum is taken over all possible values of `x`.
 
