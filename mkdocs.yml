@@ -19,7 +19,8 @@ nav:
   - 'Introduction': index.md
   - 'Lit Review':
       - 'Literature_Reviews/CommNet.md'
+      - 'Literature_Reviews/DIAL_RIAL.md'
   - 'Findings':
       - 'Findings/KL_divergence.md'
-      - 'Findings/DIAL_RIAL.md'
+      
       
