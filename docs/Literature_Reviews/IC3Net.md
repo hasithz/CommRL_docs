@@ -3,7 +3,10 @@
 A. Singh, T. Jain, and S. Sukhbaatar, “Learning when to Communicate at Scale in Multiagent Cooperative and Competitive Tasks.” arXiv, Dec. 23, 2018. Accessed: Apr. 14, 2023. [Online]. Available: http://arxiv.org/abs/1812.09755
 
 
-![IC3Net architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/abe8d78ea94fd65dd614f2052b9cb55bde8a1f80/assets/images/commnet%20and%20communication.drawio.svg)
+![IC3Net architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/1c5db1af39a210335d3399f9a9505dc417b83cbb/assets/images/IC3Net.drawio.svg)
+
+
+An overview of IC3Net. (Left) In-depth view of a single communication step. LSTM gets hidden state, ht and cell state, st (not shown) from previous time-step. Hidden state ht is passed to Communication-Action module fg for a communication binary action gt. Finally, communication vector ct is calculated by averaging hidden states of other active agents gated by their communication action act and is passed through a linear transformation C before fed to LSTM along with the observation. (Right) High-level view of IC3Net which optimizes individual rewards rt for each agent based on observation ot.
 
 <!-- has better training efficiency than simple continuous communication model, and can be applied to semi-cooperative and competitive settings along with the cooperative settings
 
