@@ -12,7 +12,7 @@ This setting complies with the facts: (i) one of the purposes of communication i
 
 The training of ATOC is an extension of DDPG. More concretely, consider a game with N agents, and the critic, actor, communication channel, and attention unit of ATOC is parameterized by θQ, θμ, θg, and θp, respectively. Note that we drop time t in the following notations for simplicity. -->
 
-![ATOC architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/abe8d78ea94fd65dd614f2052b9cb55bde8a1f80/assets/images/ATOC.drawio.svg)
+![ATOC architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/17137889e1a06f72102cb3b2884ac6af08041954/assets/images/ATOC.drawio.svg)
 
 The Attentional Communication for Multi-Agent Cooperation (ATOC) is an extension of the actor-critic model, which is trained using backpropagation in an end-to-end fashion. All agents share the same policy network, Q-network, attention unit, and communication channel, making it suitable for large-scale multi-agent environments.
 
