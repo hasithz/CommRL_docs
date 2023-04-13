@@ -19,3 +19,5 @@ nav:
   - 'Introduction': index.md
   - 'Lit Review':
       - 'Literature_Reviews/CommNet.md'
+  - 'Findings':
+      - 'Findings/KL_divergence.md'
