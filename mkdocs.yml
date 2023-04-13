@@ -21,3 +21,5 @@ nav:
       - 'Literature_Reviews/CommNet.md'
   - 'Findings':
       - 'Findings/KL_divergence.md'
+      - 'Findings/DIAL_RIAL.md'
+      
