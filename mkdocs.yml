@@ -46,5 +46,6 @@ nav:
       - 'tasks/tasks_carried.md'
   - 'Findings':
       - 'Findings/KL_divergence.md'
+      - 'Findings/Gumbel-Softmax estimator.md'
       
       
