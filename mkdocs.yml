@@ -40,7 +40,8 @@ nav:
       - 'Literature_Reviews/MAGIC.md'
       - 'Literature_Reviews/FlowComm.md'
       - 'Literature_Reviews/GAXNet.md'
-      
+  - 'Environments':
+      - Envs/Envs.md
   - 'Task Carried Out':
       - 'tasks/tasks_carried.md'
   - 'Findings':

@@ -1,1 +1,1 @@
-# MADDPG
+# MAGNet-SA-GS-MG

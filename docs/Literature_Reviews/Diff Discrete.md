@@ -1,1 +1,1 @@
-# MADDPG
+# Diff Discrete

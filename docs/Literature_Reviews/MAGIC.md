@@ -1,1 +1,1 @@
-# MADDPG
+# MAGIC
