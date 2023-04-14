@@ -47,5 +47,6 @@ nav:
   - 'Findings':
       - 'Findings/KL_divergence.md'
       - 'Findings/Gumbel-Softmax estimator.md'
+      - 'Findings/adjacency matrix.md'
       
       
