@@ -1,53 +1,35 @@
 # Adjacency Matrix
 
-An adjacency matrix is a square matrix that represents a graph. Each row and column of the matrix represents a vertex, and the values in the matrix indicate whether there is an edge between two vertices. If there is an edge between vertices i and j, then the (i, j) and (j, i) entries of the matrix are set to 1. If there is no edge between vertices i and j, then the (i, j) and (j, i) entries of the matrix are set to 0.
+An adjacency matrix is a square matrix used to represent a finite graph in which the elements represent the edges between the nodes. The adjacency matrix has a row and a column for each node in the graph, and the value at the intersection of a row and column indicates the presence (usually a 1) or absence (usually a 0) of an edge between those nodes.
 
-For example, consider the following graph:
+Here's an example of an adjacency matrix for a simple undirected graph with 4 nodes (A, B, C, and D) and the following edges: (A, B), (A, C), and (C, D).
 
-   A --- B
-  / \   / \
- C---D---E---F
+|   | A | B | C | D |
+|:-:|:-:|:-:|:-:|:-:|
+| A | 0 | 1 | 1 | 0 |
+| B | 1 | 0 | 0 | 0 |
+| C | 1 | 0 | 0 | 1 |
+| D | 0 | 0 | 1 | 0 |
 
-We can represent this graph using an adjacency matrix as follows:
+The adjacency matrix is symmetric for undirected graphs since the edges are bidirectional. For directed graphs, the matrix might not be symmetric, as the presence of an edge from one node to another does not guarantee the presence of an edge in the opposite direction.
 
-   A B C D E F
-A  0 1 1 0 0 0
-B  1 0 0 0 1 0
-C  1 0 0 1 0 0
-D  0 0 1 0 1 1
-E  0 1 0 1 0 1
-F  0 0 0 1 1 0
+In addition to the basic concept of adjacency matrices, there are a few more properties and concepts that you should be aware of:
 
-As you can see, the rows and columns of the matrix correspond to the vertices A through F, and the entries indicate whether there is an edge between each pair of vertices.
+**Weighted graphs**: In weighted graphs, edges have associated weights or costs. The adjacency matrix of a weighted graph will store the weight of the edge between two nodes instead of a binary value. For example, consider a weighted graph with 4 nodes (A, B, C, and D) and the following edges with weights: (A, B, 3), (A, C, 2), and (C, D, 4).
 
-In some cases, we may also use a weighted adjacency matrix, where the entries represent the weight of the edge between two vertices instead of just 1 or 0.
+Here's the adjacency matrix for this weighted graph:
 
-To summarize, adjacency matrices are a useful tool for representing graphs in a compact and efficient way. They allow us to easily determine which vertices are adjacent to one another and can be used for a variety of graph algorithms and applications.
+|   | A | B | C | D |
+|:-:|:-:|:-:|:-:|:-:|
+| A | 0 | 3 | 2 | 0 |
+| B | 3 | 0 | 0 | 0 |
+| C | 2 | 0 | 0 | 4 |
+| D | 0 | 0 | 4 | 0 |
 
-Here's the above explanation in markdown code:
+**Operations on adjacency matrices**: You can perform various matrix operations on adjacency matrices to compute different properties of the graph. For example, you can multiply two adjacency matrices to find the number of paths of a certain length between nodes.
 
-An adjacency matrix is a square matrix that represents a graph. Each row and column of the matrix represents a vertex, and the values in the matrix indicate whether there is an edge between two vertices. If there is an edge between vertices i and j, then the (i, j) and (j, i) entries of the matrix are set to 1. If there is no edge between vertices i and j, then the (i, j) and (j, i) entries of the matrix are set to 0.
+**Time complexity**: The adjacency matrix representation of a graph has a time complexity of O(V^2) for most operations, where V is the number of vertices in the graph. This is because you need to access every element in the matrix to perform operations like adding or removing an edge, or checking if an edge exists between two nodes. This representation is efficient for dense graphs, where the number of edges is close to V^2. However, it can be inefficient for sparse graphs, where the number of edges is much smaller than V^2.
 
-For example, consider the following graph:
+**Alternatives to adjacency matrices**: An alternative way to represent graphs is the adjacency list representation. An adjacency list consists of an array or list of vertices, where each vertex has a list of its neighboring vertices. This representation is more space-efficient for sparse graphs and can have better time complexity for certain graph operations, depending on the specific use case.
 
-A --- B
-/ \ /
-C---D---E---F
-
-
-We can represent this graph using an adjacency matrix as follows:
-
-A B C D E F
-A 0 1 1 0 0 0
-B 1 0 0 0 1 0
-C 1 0 0 1 0 0
-D 0 0 1 0 1 1
-E 0 1 0 1 0 1
-F 0 0 0 1 1 0
-
-
-As you can see, the rows and columns of the matrix correspond to the vertices A through F, and the entries indicate whether there is an edge between each pair of vertices.
-
-In some cases, we may also use a weighted adjacency matrix, where the entries represent the weight of the edge between two vertices instead of just 1 or 0.
-
-To summarize, adjacency matrices are a useful tool for representing graphs in a compact and efficient way. They allow us to easily determine which vertices are adjacent to one another and can be used for a variety of graph algorithms and applications.
+In summary, adjacency matrices are a useful way to represent graphs, especially for dense graphs or when you need to perform matrix operations. However, for sparse graphs or when space efficiency is a concern, you may want to consider other representations like adjacency lists.
