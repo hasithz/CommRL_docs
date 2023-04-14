@@ -1,5 +1,8 @@
 # Adjacency Matrix
 
+learn through this video
+[!video](https://www.google.com/search?q=Adjacency+Matrix&client=ubuntu&hs=tYI&channel=fs&sxsrf=APwXEddvAdpFLkYx99Ok64YZK1ncGYpt-A:1681459324064&source=lnms&tbm=vid&sa=X&ved=2ahUKEwir8duN9Kj-AhXN6zgGHY1KB_AQ_AUoAnoECAEQBA&biw=1318&bih=656&dpr=1#fpstate=ive&vld=cid:f5fdc7b7,vid:HA7xgaFDqnw)
+
 An adjacency matrix is a square matrix used to represent a finite graph in which the elements represent the edges between the nodes. The adjacency matrix has a row and a column for each node in the graph, and the value at the intersection of a row and column indicates the presence (usually a 1) or absence (usually a 0) of an edge between those nodes.
 
 Here's an example of an adjacency matrix for a simple undirected graph with 4 nodes (A, B, C, and D) and the following edges: (A, B), (A, C), and (C, D).
@@ -63,3 +66,4 @@ Let's discuss some additional graph concepts and techniques that can be applied 
 - **Graph Partitioning**: Graph partitioning is the problem of dividing a graph into k parts, such that the number of edges between the parts is minimized, and the size of the parts is balanced. This problem has applications in parallel computing, VLSI design, and data clustering. Graph partitioning can be solved using techniques like recursive bisection, multilevel methods, and spectral partitioning.
 
 Remember that when working with graphs, the choice of representation (e.g., adjacency matrix, adjacency list) and algorithm often depends on the specific problem and the properties of the input graph. It's essential to understand the trade-offs between different representations and algorithms and choose the one that best fits your use case. Additionally, consider using existing graph libraries and frameworks to save time and effort when implementing graph algorithms.
+
