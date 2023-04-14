@@ -3,7 +3,7 @@
 J. Jiang, C. Dun, T. Huang, and Z. Lu, “Graph Convolutional Reinforcement Learning.” arXiv, Feb. 11, 2020. Accessed: Apr. 14, 2023. [Online]. Available: http://arxiv.org/abs/1810.09202
 
 
-![DGN architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/17137889e1a06f72102cb3b2884ac6af08041954/assets/images/DGN.drawio.svg)
+![DGN architecture as in paper](https://github.com/hasithz/CommRL_docs/blob/master/assets/images/DGN.drawio.svg)
 
 DGN consists of three modules: encoder, convolutional layer, and Q network. All agents share weights and gradients are accumulated to update the weights.
 
