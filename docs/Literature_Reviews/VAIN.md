@@ -44,7 +44,7 @@ The pooled feature Pi is concatenated to the original features Fi to form interm
 
 In summary, the VAIN model offers a flexible and powerful approach to modeling multi-agent interactions and generating agent or system-level predictions. It leverages attention mechanisms and encoding functions to capture relevant agent information and model interactions effectively.
 
-# VIN (Visual Interaction Networks)
+## VIN (Visual Interaction Networks)
 
 N. Watters, A. Tacchetti, T. Weber, R. Pascanu, P. Battaglia, and D. Zoran, “Visual Interaction Networks.” arXiv, Jun. 05, 2017. Accessed: Apr. 15, 2023. [Online]. Available: http://arxiv.org/abs/1706.01433
 
