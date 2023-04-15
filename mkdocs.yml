@@ -16,7 +16,11 @@ markdown_extensions:
   - admonition
 
 nav:
-  - 'Introduction': index.md
+  - 'Introduction': 
+      - intro/index.md
+      - intro/RL.md
+      - intro/MARL.md
+      
   - 'Lit Review':
       - 'Literature_Reviews/CommNet.md'
       - 'Literature_Reviews/DIAL_RIAL.md'
