@@ -49,7 +49,7 @@ In summary, the VAIN model offers a flexible and powerful approach to modeling m
 N. Watters, A. Tacchetti, T. Weber, R. Pascanu, P. Battaglia, and D. Zoran, “Visual Interaction Networks.” arXiv, Jun. 05, 2017. Accessed: Apr. 15, 2023. [Online]. Available: http://arxiv.org/abs/1706.01433
 
 
-![VIN architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/c1c0b88de33f0bb84935798488ff23659de9affb/assets/images/VIN.drawio.svg)
+![VIN architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/1272d610085f85313f57077d09d4bb5bc074337e/assets/images/VIN.drawio.svg)
 
 <!-- Our Visual Interaction Network (VIN) learns to produce future trajectories of objects in a physical system from only a few video frames of that system. The VIN is depicted in Figure 1 (best viewed in color), and consists of the following components: 
 
@@ -78,7 +78,7 @@ The state decoder is simply a linear layer with input size Lcode and output size
 
 The paper "Visual Interaction Networks" by N. Watters et al. introduces a model called Visual Interaction Network (VIN) that learns to predict future trajectories of objects in a physical system using only a few video frames of that system. The VIN consists of the following components:
 
-![VIN architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/c1c0b88de33f0bb84935798488ff23659de9affb/assets/images/VIN.drawio.svg)
+![VIN architecture as in paper](https://github.com/hasithz/CommRL_docs/blob/master/assets/images/VIN%20Encoder.png)
 
 -    **Visual Encoder**: This is a Convolutional Neural Network (CNN) that produces a state code from a sequence of three images. The state code is a list of vectors, one for each object in the scene, representing the position and velocity of the object. The visual encoder uses a frame pair encoder (Epair) applied to both consecutive pairs of frames in a sequence of three frames, and the two resulting candidate state codes are aggregated by a slot-wise MLP into an encoded state code.
 
