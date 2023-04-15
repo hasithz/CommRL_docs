@@ -78,7 +78,7 @@ The state decoder is simply a linear layer with input size Lcode and output size
 
 The paper "Visual Interaction Networks" by N. Watters et al. introduces a model called Visual Interaction Network (VIN) that learns to predict future trajectories of objects in a physical system using only a few video frames of that system. The VIN consists of the following components:
 
-![VIN architecture as in paper](https://github.com/hasithz/CommRL_docs/blob/master/assets/images/VIN%20Encoder.png)
+![VIN Encoder in paper](https://github.com/hasithz/CommRL_docs/blob/master/assets/images/VIN%20Encoder.png)
 
 -    **Visual Encoder**: This is a Convolutional Neural Network (CNN) that produces a state code from a sequence of three images. The state code is a list of vectors, one for each object in the scene, representing the position and velocity of the object. The visual encoder uses a frame pair encoder (Epair) applied to both consecutive pairs of frames in a sequence of three frames, and the two resulting candidate state codes are aggregated by a slot-wise MLP into an encoded state code.
 
