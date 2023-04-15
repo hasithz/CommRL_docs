@@ -2,7 +2,7 @@
 
 Y. Hoshen, “VAIN: Attentional Multi-agent Predictive Modeling.” arXiv, Sep. 28, 2018. Accessed: Apr. 15, 2023. [Online]. Available: http://arxiv.org/abs/1706.06122
 
-![VAIN architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/5c23a6b274e4f5f2f115ee4b651979681b72a7dc/assets/images/VAIN.drawio.svg)
+![VAIN architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/c1c0b88de33f0bb84935798488ff23659de9affb/assets/images/VAIN.drawio.svg)
 
 <!-- A schematic of a single-hop VAIN: i) The agent features Fi are embedded by singleton encoder Es() to yield encoding es i and communications encoder Ec() to yield vector ec i and attention vector ai ii) For each agent an attention-weighted sum of all embeddings ec i is computed Pi = ∑ j wi,j ∗ ec j. The attention weights wi,j are computed by a Softmax over −||ai − aj||2. The diagonal wi,i is set to zero to exclude self-interactions. iii) The singleton codes es i are concatenated with the pooled feature Pi to yield intermediate feature Ci iv) The feature is passed through decoding network D() to yield per-agent vector oi. For Regression: oi is the final output of the network. vii) For Classification: oi is scalar and is passed through a Softmax.
 
