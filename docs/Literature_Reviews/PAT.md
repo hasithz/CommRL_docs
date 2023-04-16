@@ -2,7 +2,7 @@
 
 Y. Liang and B. Li, “Parallel Knowledge Transfer in Multi-Agent Reinforcement Learning.” arXiv, Mar. 29, 2020. Accessed: Apr. 17, 2023. [Online]. Available: http://arxiv.org/abs/2003.13085
 
-![CommNet architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/abe8d78ea94fd65dd614f2052b9cb55bde8a1f80/assets/images/commnet%20and%20communication.drawio.svg)
+![PAT architecture as in paper](https://raw.githubusercontent.com/hasithz/CommRL_docs/3bb51d60b49389c2bf5ed72e9ca837240e94e035/assets/images/PAT.drawio.svg)
 
 The PAT (Policy Aggregation for Training Agents) architecture is a method for training cooperative multi-agent systems (MAS) using reinforcement learning (RL). The goal of the PAT architecture is to enable agents in a MAS to learn to coordinate their actions and achieve better overall performance than individual agents acting independently.
 
