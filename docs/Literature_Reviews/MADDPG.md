@@ -1,1 +1,10 @@
 # MADDPG
+
+MADDPG, short for Multi-Agent Deep Deterministic Policy Gradient, is a deep reinforcement learning algorithm designed for cooperative multi-agent environments. In these environments, multiple agents must learn to collaborate in order to achieve a common goal, and their actions affect not only their own rewards but also the rewards of other agents.
+MADDPG extends the popular DDPG algorithm, which is a model-free, off-policy actor-critic algorithm for single-agent environments, to the multi-agent setting. In MADDPG, each agent has its own actor and critic network, which takes as input both the agent's own observations and the observations of other agents in the environment. The actor network outputs an action for the agent to take, while the critic network estimates the value function for the agent's policy.
+
+To handle the non-stationarity and partial observability of the multi-agent environment, MADDPG uses a centralized training and decentralized execution approach. During training, the critic networks receive not only the observations and actions of the agent being trained, but also the observations and actions of all other agents in the environment. This allows the critic networks to learn a more accurate estimate of the value function, taking into account the interactions between agents. During execution, each agent only has access to its own local observations, and uses its own actor network to select actions.
+MADDPG also uses a replay buffer to store experiences, which allows for more efficient training and helps to reduce the correlations between consecutive samples. To encourage cooperation between agents, MADDPG uses a shared experience replay buffer, where each agent samples experiences from the same buffer.
+
+MADDPG has been shown to be effective at learning collaborative policies in a variety of multi-agent environments, including games and robotics tasks. It is also scalable to environments with a large number of agents, and can handle both cooperative and competitive settings.
+
