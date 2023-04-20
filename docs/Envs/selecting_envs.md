@@ -31,5 +31,5 @@ These environments are from OpenAI’s MPE codebase, with several minor fixes, m
 | Interaction among entities   | Indirect                      | Direct                       |
 | Computational complexity     | Often computationally efficient | Often computationally expensive |
 | Applications                 | Simulation of biological systems, traffic flow, social dynamics | Materials science, chemistry, physics |
-observation type                | 2D array like observation and multi dict | agent’s position and velocity, other agents’ relative positions <br>and velocities, landmarks’ relative positions, landmarks’ and agents’ types, and communications received from other agents|
+observation type                | 2D array like observation and multi dict | agent’s position and velocity, other agents’ relative positions <br>and velocities, landmarks’ relative positions, landmarks’ and agents’ types, <br>and communications received from other agents|
 action space                    | discrete                      | discrete / continuous |
