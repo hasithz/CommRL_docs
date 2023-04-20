@@ -12,7 +12,7 @@ In addition, the environments found in the BabyAI repository have been included 
 
 
 ### multi agent env
-as for the multi agent we can use [mini grid env](https://github.com/ArnaudFickinger/gym-multigrid)
+as for the multi agent we can use **[mini grid env](https://github.com/ArnaudFickinger/gym-multigrid)**
 ## MPE
 
 **[MPE](https://pettingzoo.farama.org/environments/mpe/)**
@@ -20,3 +20,16 @@ This has 9 environment types.
 Multi Particle Environments (MPE) are a set of communication oriented environment where particle agents can (sometimes) move, communicate, see each other, push each other around, and interact with fixed landmarks.
 
 These environments are from OpenAI’s MPE codebase, with several minor fixes, mostly related to making the action space discrete by default, making the rewards consistent and cleaning up the observation space of certain environments.
+
+| Aspect                       | Multi-Grid Environments       | Multi-Particle Environments |
+|------------------------------|-------------------------------|------------------------------|
+| Definition                   | A grid-like environment where agents can move between cells or nodes | An environment where multiple particles interact with each other |
+| Example                      | Conway's Game of Life          | Molecular dynamics simulation |
+| State representation         | Discrete                       | Continuous                   |
+| Action space                 | Discrete                       | Continuous                   |
+| Dynamics                     | Deterministic or stochastic   | Deterministic or stochastic   |
+| Interaction among entities   | Indirect                      | Direct                       |
+| Computational complexity     | Often computationally efficient | Often computationally expensive |
+| Applications                 | Simulation of biological systems, traffic flow, social dynamics | Materials science, chemistry, physics |
+observation type                | 2D array like observation and multi dict | agent’s position and velocity, other agents’ relative positions and velocities, landmarks’ relative positions, landmarks’ and agents’ types, and communications received from other agents|
+action space                    | discrete                      | discrete / continuous |
